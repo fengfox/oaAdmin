@@ -1,0 +1,17 @@
+server:
+  port: 8004
+  tomcat:
+    uri-encoding:  UTF-8
+spring:
+  datasource:
+    url: jdbc:sqlserver://172.18.8.23:1433;DatabaseName=OA30
+    username: OA_CONNECTOR_APP
+    password: User*Schk_2016
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    properties:
+      hibernate:
+        default_schema : OA
+
+webservice:
+  portal: http://172.18.8.42:10000/SINGPOINT/services/ValidEffectUser?wsdl
